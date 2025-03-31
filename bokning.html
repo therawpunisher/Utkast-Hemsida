@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokning - Aktiva Fötter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Allt för navbaren - Samma på alla sidor -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #228196b2;"> 
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center text-light mx-3" href="index.html">
+                <img src="image/Aktiva_fotter_logotyp_png.png" alt="Logga" style="height: 80px; width: auto;" class="me-2">
+            </a>
+    
+            <!-- Responsiviter för mindre skärmar så den kollapsar till en hamburgermeny när skärmen blir för liten - samma på alla sidor -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Länkar och Sökruta - samma på alla sidor-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3" href="index.html" onmouseover="this.style.backgroundColor='#38b2cdf0'" onmouseout="this.style.backgroundColor='transparent'">Hem</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light mx-3" href="#" onmouseover="this.style.backgroundColor='#38b2cdf0'" onmouseout="this.style.backgroundColor='transparent'" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tjänster
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #38b2cdf0;">
+                            <li><a class="dropdown-item text-light" href="fotvard.html">Fotvård</a></li>
+                            <li><a class="dropdown-item text-light" href="lymfmassage.html">Lymfmassage</a></li>
+                            <li><a class="dropdown-item text-light" href="produkter.html">Produkter</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3" href="webbshop.html" onmouseover="this.style.backgroundColor='#38b2cdf0'" onmouseout="this.style.backgroundColor='transparent'">Webbshop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3" href="bokning.html" onmouseover="this.style.backgroundColor='#38b2cdf0'" onmouseout="this.style.backgroundColor='transparent'">Bokning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3" href="kontakt.html" onmouseover="this.style.backgroundColor='#38b2cdf0'" onmouseout="this.style.backgroundColor='transparent'">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3" href="om-oss.html" onmouseover="this.style.backgroundColor='#38b2cdf0'" onmouseout="this.style.backgroundColor='transparent'">Om oss</a>
+                    </li>
+                </ul>
+    
+                <!-- Sökruta - Samma på alla -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Sök..." aria-label="Sök">
+                    <button class="btn btn-outline-light" type="submit" onmouseover="this.style.backgroundColor='#38b2cdf0'" onmouseout="this.style.backgroundColor='transparent'">Sök</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!----OBS!!!----Här startar AI generad kod-->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Bokningskalender</h1>
+        
+        <div id="calendar"></div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                events: [
+                    {
+                        title: 'Fotvårdsbehandling',
+                        start: '2025-04-01'
+                    },
+                    {
+                        title: 'Lymfmassage',
+                        start: '2025-04-05',
+                        end: '2025-04-07'
+                    },
+                    {
+                        title: 'Webbshop-rea',
+                        start: '2025-04-10T10:00:00',
+                        end: '2025-04-10T15:00:00'
+                    }
+                ]
+            });
+
+            calendar.render();
+        });
+    </script>
+    <!--Här slutar AI generad kod-->
+
+<!-- Footer - samma på alla -->
+<footer class="text-light py-4" style="background-color: #228196b2;">
+    <div class="container">
+        <div class="row">
+            <!-- Kolumn 1: Kontaktinformation -->
+            <div class="col-md-4 d-flex flex-column justify-content-center">
+                <p>Kontakt: info@aktivafotter.se</p>
+                <p>Adress: Djurgårdsgatan 51, Linköping</p>
+                <p>Tel: 070-123 45 67</p>
+            </div>
+
+            <!-- Kolumn 2: Sociala medier längst ner -->
+            <div class="col-md-4 d-flex flex-column justify-content-between">
+                <!-- Övre tomt utrymme för att raderna ska flyttas ner -->
+                <div></div>
+                <!-- Två rader längst ner -->
+                <div class="text-center">
+                    <p>&copy; 2025 Fotvård Företaget - Alla rättigheter förbehållna</p>
+                    <p>Följ oss på 
+                        <a href="#" 
+                            onmouseover="this.style.backgroundColor='#38b2cdf0'" 
+                            onmouseout="this.style.backgroundColor='transparent'" 
+                            class="text-light">Instagram</a> och 
+                        <a href="#" 
+                            onmouseover="this.style.backgroundColor='#38b2cdf0'" 
+                            onmouseout="this.style.backgroundColor='transparent'" 
+                            class="text-light">Facebook</a>
+                    </p>
+                </div>
+            </div>
+   
+            <!-- Kolumn 3: Logotyp -->
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <a href="index.html">
+                    <img src="image/Aktiva_fotter_logotyp_png.png" alt="Logga" style="height: 120px; width: auto;">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- Bootstrap JS -->
+    <script src="kalender.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/locales/sv.global.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkter - Aktiva Fötter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Allt för navbaren - Samma på alla sidor -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #228196b2;">
+        <div class="container-fluid">
+            <!-- Logga -->
+            <a class="navbar-brand d-flex align-items-center text-light mx-3" href="index.html">
+                <img src="image/Aktiva_fotter_logotyp_png.png" alt="Logga" style="height: 80px; width: auto;" class="me-2">
+            </a>
+    
+              <!-- Responsiviter för mindre skärmar så den kollapsar till en hamburgermeny när skärmen blir för liten - samma på alla sidor -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Länkar och Sökruta - samma på alla sidor-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3" href="index.html" onmouseover="this.style.backgroundColor='#38b2cdf0'" onmouseout="this.style.backgroundColor='transparent'">Hem</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light mx-3" href="#" onmouseover="this.style.backgroundColor='#38b2cdf0'" onmouseout="this.style.backgroundColor='transparent'" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tjänster
+                        </a>
+                        <ul class="dropdown-menu" style="background-color: #38b2cdf0;">
+                            <li><a class="dropdown-item text-light" href="fotvard.html">Fotvård</a></li>
+                            <li><a class="dropdown-item text-light" href="lymfmassage.html">Lymfmassage</a></li>
+                            <li><a class="dropdown-item text-light" href="produkter.html">Produkter</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3" href="webbshop.html" onmouseover="this.style.backgroundColor='#38b2cdf0'" onmouseout="this.style.backgroundColor='transparent'">Webbshop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3" href="bokning.html" onmouseover="this.style.backgroundColor='#38b2cdf0'" onmouseout="this.style.backgroundColor='transparent'">Bokning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3" href="kontakt.html" onmouseover="this.style.backgroundColor='#38b2cdf0'" onmouseout="this.style.backgroundColor='transparent'">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light mx-3" href="om-oss.html" onmouseover="this.style.backgroundColor='#38b2cdf0'" onmouseout="this.style.backgroundColor='transparent'">Om oss</a>
+                    </li>
+                </ul>
+    
+                <!-- Sökruta - Samma på alla -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Sök..." aria-label="Sök">
+                    <button class="btn btn-outline-light" type="submit" onmouseover="this.style.backgroundColor='#38b2cdf0'" onmouseout="this.style.backgroundColor='transparent'">Sök</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <!-- Produkter Content -->
+    <div class="container my-5 flex-grow-1">
+        <h1 class="text-center" style="margin-bottom: 30px;">Våra Produkter</h1>
+        <p style="margin-bottom: 50px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est sed repellat dolorum ab ratione ullam sapiente, debitis minima architecto fuga alias, veritatis odit dolores id laborum. Aut eos perferendis consequuntur dignissimos facilis id suscipit qui accusantium officiis reiciendis officia molestiae amet itaque, fuga labore, deserunt temporibus! Corporis necessitatibus delectus autem, temporibus molestiae at officiis tenetur.</p>
+        <div class="row gy-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="produkt1.jpg" class="card-img-top" alt="Produkt 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Fotkräm</h5>
+                        <p class="card-text">En återfuktande kräm för torra fötter.</p>
+                        <a href="webbshop.html" class="btn btn-primary">Köp nu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="produkt2.jpg" class="card-img-top" alt="Produkt 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Fotfil</h5>
+                        <p class="card-text">Ta enkelt bort hård hud med vår kvalitetsfotfil.</p>
+                        <a href="webbshop.html" class="btn btn-primary">Köp nu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="produkt3.jpg" class="card-img-top" alt="Produkt 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Fotbad</h5>
+                        <p class="card-text">För starka och friska naglar.</p>
+                        <a href="webbshop.html" class="btn btn-primary">Köp nu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="produkt3.jpg" class="card-img-top" alt="Produkt 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Nagelolja</h5>
+                        <p class="card-text">För starka och friska naglar.</p>
+                        <a href="webbshop.html" class="btn btn-primary">Köp nu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="produkt3.jpg" class="card-img-top" alt="Produkt 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Nagelvård</h5>
+                        <p class="card-text">För starka och friska naglar.</p>
+                        <a href="webbshop.html" class="btn btn-primary">Köp nu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="produkt3.jpg" class="card-img-top" alt="Produkt 3">
+                    <div class="card-body">
+                        <h5 class="card-title">återfuktande</h5>
+                        <p class="card-text">För starka och friska naglar.</p>
+                        <a href="webbshop.html" class="btn btn-primary">Köp nu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Footer - samma på alla -->
+   <footer class="text-light py-4" style="background-color: #228196b2;">
+    <div class="container">
+        <div class="row">
+            <!-- Kolumn 1: Kontaktinformation -->
+            <div class="col-md-4 d-flex flex-column justify-content-center">
+                <p>Kontakt: info@aktivafotter.se</p>
+                <p>Adress: Djurgårdsgatan 51, Linköping</p>
+                <p>Tel: 070-123 45 67</p>
+            </div>
+
+            <!-- Kolumn 2: Sociala medier längst ner -->
+            <div class="col-md-4 d-flex flex-column justify-content-between">
+                <!-- Övre tomt utrymme för att raderna ska flyttas ner -->
+                <div></div>
+                <!-- Två rader längst ner -->
+                <div class="text-center">
+                    <p>&copy; 2025 Fotvård Företaget - Alla rättigheter förbehållna</p>
+                    <p>Följ oss på 
+                        <a href="#" 
+                            onmouseover="this.style.backgroundColor='#38b2cdf0'" 
+                            onmouseout="this.style.backgroundColor='transparent'" 
+                            class="text-light">Instagram</a> och 
+                        <a href="#" 
+                            onmouseover="this.style.backgroundColor='#38b2cdf0'" 
+                            onmouseout="this.style.backgroundColor='transparent'" 
+                            class="text-light">Facebook</a>
+                    </p>
+                </div>
+            </div>
+   
+            <!-- Kolumn 3: Logotyp -->
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <a href="index.html">
+                    <img src="image/Aktiva_fotter_logotyp_png.png" alt="Logga" style="height: 120px; width: auto;">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
